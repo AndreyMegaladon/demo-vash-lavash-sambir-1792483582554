@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пекарня Ваш ЛАВаш у Самборі</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20 flex items-center justify-between px-6 md:px-12 shadow-sm">
+        <a href="index.html" class="text-2xl font-black text-amber-600 flex items-center gap-2">
+            <span>🍞</span> Ваш ЛАВаш
+        </a>
+        <div class="hidden md:flex items-center gap-2 font-medium">
+            <a href="index.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Головна</a>
+            <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Про нас</a>
+            <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Меню</a>
+            <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Галерея</a>
+            <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Бронювання</a>
+            <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Контакти</a>
+        </div>
+        <div class="md:hidden">
+            <a href="services.html" class="bg-amber-500 text-white px-4 py-2 rounded-lg text-sm font-bold">Меню</a>
+        </div>
+    </nav>
+
+    <header class="min-h-[80vh] relative bg-cover bg-center flex items-center justify-center text-center px-6" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1920&q=80')">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 max-w-4xl text-white">
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">Пекарня Ваш ЛАВаш у Самборі</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200 font-light">Чесна їжа, справедлива ціна та найсвіжіша випічка щодня</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="services.html" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-2xl transition transform hover:-translate-y-1">Переглянути меню</a>
+                <a href="booking.html" class="bg-white/10 hover:bg-white/25 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl text-lg font-semibold transition">Замовити столик</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Популярні позиції</h2>
+            <p class="text-gray-600 max-w-xl mx-auto">Спробуйте наші найулюбленіші страви, які готуються за унікальними рецептами щодня.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb0f?auto=format&fit=crop&w=600&q=80" alt="Лаваш з часником" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Лаваш та хліб</div>
+                    <h3 class="text-xl font-bold mb-2">Лаваш з часником</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Випечений з дріжджового тіста, натертий часником та посипаний зеленню</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-black text-amber-600">63.00 ₴</span>
+                        <a href="services.html" class="bg-amber-50 hover:bg-amber-100 text-amber-700 px-4 py-2 rounded-lg font-semibold text-sm transition">Замовити</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Піца Маргарита" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Піца</div>
+                    <h3 class="text-xl font-bold mb-2">Піца Маргарита 30 см</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Дріжджове тісто, томатний соус, помідор, сир, сушений базилік</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-black text-amber-600">143.00 ₴</span>
+                        <a href="services.html" class="bg-amber-50 hover:bg-amber-100 text-amber-700 px-4 py-2 rounded-lg font-semibold text-sm transition">Замовити</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=600&q=80" alt="Сирний крем-суп" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Супи</div>
+                    <h3 class="text-xl font-bold mb-2">Сирний крем-суп</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Суп з кремовою текстурою, із плавленого сиру та овочів (300 мл)</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-black text-amber-600">141.00 ₴</span>
+                        <a href="services.html" class="bg-amber-50 hover:bg-amber-100 text-amber-700 px-4 py-2 rounded-lg font-semibold text-sm transition">Замовити</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-amber-500 py-20 px-6 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-black mb-6">Завітайте до нас у Самборі!</h2>
+            <p class="text-lg mb-8 opacity-90">вулиця Сагайдачного, 8, Самбір. Чекаємо на вас щодня з 09:00 до 21:00.</p>
+            <a href="contacts.html" class="inline-block bg-white text-amber-600 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition shadow-lg">Контакти та мапа</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Пекарня Ваш ЛАВаш</h3>
+                <p class="text-sm text-gray-400">Чесна їжа, справедлива ціна та найсвіжіша випічка щодня у місті Самбір.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Головна</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Про нас</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Меню</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Галерея</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Контакти</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p class="text-sm text-gray-400 mb-2">вулиця Сагайдачного, 8, Самбір</p>
+                <p class="text-sm text-gray-400 mb-2">Телефон: +380671537888</p>
+                <p class="text-sm text-gray-400">Email: info@vash-lavash.ua</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+            &copy; 2024 Пекарня Ваш ЛАВаш. Всі права захищені.
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>"
+    },
+    {
+      "path": "about.html",
+      "content": "<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - Пекарня Ваш ЛАВаш</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20 flex items-center justify-between px-6 md:px-12 shadow-sm">
+        <a href="index.html" class="text-2xl font-black text-amber-600 flex items-center gap-2">
+            <span>🍞</span> Ваш ЛАВаш
+        </a>
+        <div class="hidden md:flex items-center gap-2 font-medium">
+            <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Головна</a>
+            <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Про нас</a>
+            <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Меню</a>
+            <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Галерея</a>
+            <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Бронювання</a>
+            <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Контакти</a>
+        </div>
+        <div class="md:hidden">
+            <a href="services.html" class="bg-amber-500 text-white px-4 py-2 rounded-lg text-sm font-bold">Меню</a>
+        </div>
+    </nav>
+
+    <div class="bg-white border-b border-gray-100 py-4 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-gray-500">
+            <a href="index.html" class="hover:text-amber-600">Головна</a> > <span class="text-gray-800 font-semibold">Про нас</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl font-black mb-8 text-gray-900">Про пекарню «Ваш ЛАВаш»</h1>
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 space-y-6 text-gray-700 leading-relaxed text-lg">
+                <p>Пекарня «Ваш ЛАВаш» у Самборі об'єднує давні традиції та сучасний підхід до випікання найсмачнішого хліба та випічки. Це частина відомої української мережі пекарень, заснованої Ігором Дулиним, яка завоювала любов покупців завдяки неперевершеній якості, доступним цінам та широкому асортименту.</p>
+                <p>У нашому закладі ви завжди знайдете свіжоспечений гарячий лаваш (з часником, сванський, з сиром), традиційні хачапурі, самсу, піцу, а також апетитні авторські супи та ситні роли. Ми дбаємо про те, щоб кожен гість міг насолодитися улюбленою випічкою та ароматною кавою у затишній атмосфері.</p>
+                <p>Головна місія мережі — чесна їжа та справедлива ціна. Ми постійно вдосконалюємо асортимент, додаючи як класичні вироби, так і смачні новинки для наших відвідувачів.</p>
+            </div>
+
+            <div class="mt-16">
+                <h2 class="text-2xl font-black mb-6 text-gray-900">Унікальні особливості бренду</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="text-amber-500 text-3xl font-bold mb-3">01</div>
+                        <h3 class="font-bold mb-2">Мережа пекарень</h3>
+                        <p class="text-sm text-gray-600">Частина великої української мережі пекарень «Ваш ЛАВаш».</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="text-amber-500 text-3xl font-bold mb-3">02</div>
+                        <h3 class="font-bold mb-2">Філософія</h3>
+                        <p class="text-sm text-gray-600">«Чесна їжа та справедлива ціна» для кожного покупця.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="text-amber-500 text-3xl font-bold mb-3">03</div>
+                        <h3 class="font-bold mb-2">Асортимент</h3>
+                        <p class="text-sm text-gray-600">Від класичних лавашів і хачапурі до піци та крем-супів.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-amber-100/50 rounded-3xl p-8 border border-amber-200">
+                <h2 class="text-2xl font-black mb-4 text-gray-900">Засновник мережі</h2>
+                <p class="text-gray-700 font-medium text-lg">Ігор Дулин</p>
+                <p class="text-sm text-gray-600 mt-1">Ідеолог та засновник мережі пекарень, що змінює культуру споживання свіжого хліба в Україні.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Пекарня Ваш ЛАВаш</h3>
+                <p class="text-sm text-gray-400">Чесна їжа, справедлива ціна та найсвіжіша випічка щодня у місті Самбір.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Головна</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Про нас</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Меню</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Галерея</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Контакти</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p class="text-sm text-gray-400 mb-2">вулиця Сагайдачного, 8, Самбір</p>
+                <p class="text-sm text-gray-400 mb-2">Телефон: +380671537888</p>
+                <p class="text-sm text-gray-400">Email: info@vash-lavash.ua</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+            &copy; 2024 Пекарня Ваш ЛАВаш. Всі права захищені.
+        </div>
+    </footer>
+</body>
+</html>"
+    },
+    {
+      "path": "services.html",
+      "content": "<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Пекарня Ваш ЛАВаш</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20 flex items-center justify-between px-6 md:px-12 shadow-sm">
+        <a href="index.html" class="text-2xl font-black text-amber-600 flex items-center gap-2">
+            <span>🍞</span> Ваш ЛАВаш
+        </a>
+        <div class="hidden md:flex items-center gap-2 font-medium">
+            <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Головна</a>
+            <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Про нас</a>
+            <a href="services.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Меню</a>
+            <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Галерея</a>
+            <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Бронювання</a>
+            <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Контакти</a>
+        </div>
+        <div class="md:hidden">
+            <a href="services.html" class="bg-amber-500 text-white px-4 py-2 rounded-lg text-sm font-bold">Меню</a>
+        </div>
+    </nav>
+
+    <div class="bg-white border-b border-gray-100 py-4 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-gray-500">
+            <a href="index.html" class="hover:text-amber-600">Головна</a> > <span class="text-gray-800 font-semibold">Меню</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-black text-gray-900 mb-4">Наше меню</h1>
+            <p class="text-gray-600 max-w-xl mx-auto">Свіжа випічка, ароматна піца та гарячі супи щодня у Самборі.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb0f?auto=format&fit=crop&w=600&q=80" alt="Лаваш з часником" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Лаваш та хліб</div>
+                    <h3 class="text-xl font-bold mb-2">Лаваш з часником</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Випечений з дріжджового тіста, натертий часником та посипаний зеленню</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-black text-amber-600">63.00 ₴</span>
+                        <a href="booking.html" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Замовити</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Лаваш Супер Сир" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Лаваш та хліб</div>
+                    <h3 class="text-xl font-bold mb-2">Лаваш Супер Сир</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Випечений з дріжджового тіста, посипаний тертим сиром</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-black text-amber-600">77.00 ₴</span>
+                        <a href="booking.html" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Замовити</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80" alt="Лаваш листковий преміальний" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Лаваш та хліб</div>
+                    <h3 class="text-xl font-bold mb-2">Лаваш листковий преміальний (1 метр)</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Легкий, хрусткий, листовий лаваш</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-black text-amber-600">66.00 ₴</span>
+                        <a href="booking.html" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Замовити</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Піца Маргарита 30 см" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Піца</div>
+                    <h3 class="text-xl font-bold mb-2">Піца Маргарита 30 см</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Дріжджове тісто, томатний соус, помідор, сир, сушений базилік</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-black text-amber-600">143.00 ₴</span>
+                        <a href="booking.html" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Замовити</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Піца Ваш Лаваш 30 см" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Піца</div>
+                    <h3 class="text-xl font-bold mb-2">Піца Ваш Лаваш 30 см</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Дріжджове тісто, томатний соус, шинка, ковбаски мисливські, салямі, сир, помідор</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-black text-amber-600">258.00 ₴</span>
+                        <a href="booking.html" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Замовити</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=600&q=80" alt="Сирний крем-суп" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Супи</div>
+                    <h3 class="text-xl font-bold mb-2">Сирний крем-суп</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Суп з кремовою текстурою, із плавленого сиру та овочів (300 мл)</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-black text-amber-600">141.00 ₴</span>
+                        <a href="booking.html" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Замовити</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Пекарня Ваш ЛАВаш</h3>
+                <p class="text-sm text-gray-400">Чесна їжа, справедлива ціна та найсвіжіша випічка щодня у місті Самбір.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Головна</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Про нас</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Меню</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Галерея</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Контакти</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p class="text-sm text-gray-400 mb-2">вулиця Сагайдачного, 8, Самбір</p>
+                <p class="text-sm text-gray-400 mb-2">Телефон: +380671537888</p>
+                <p class="text-sm text-gray-400">Email: info@vash-lavash.ua</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+            &copy; 2024 Пекарня Ваш ЛАВаш. Всі права захищені.
+        </div>
+    </footer>
+</body>
+</html>"
+    },
+    {
+      "path": "gallery.html",
+      "content": "<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Пекарня Ваш ЛАВаш</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20 flex items-center justify-between px-6 md:px-12 shadow-sm">
+        <a href="index.html" class="text-2xl font-black text-amber-600 flex items-center gap-2">
+            <span>🍞</span> Ваш ЛАВаш
+        </a>
+        <div class="hidden md:flex items-center gap-2 font-medium">
+            <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Головна</a>
+            <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Про нас</a>
+            <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Меню</a>
+            <a href="gallery.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Галерея</a>
+            <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Бронювання</a>
+            <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Контакти</a>
+        </div>
+        <div class="md:hidden">
+            <a href="services.html" class="bg-amber-500 text-white px-4 py-2 rounded-lg text-sm font-bold">Меню</a>
+        </div>
+    </nav>
+
+    <div class="bg-white border-b border-gray-100 py-4 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-gray-500">
+            <a href="index.html" class="hover:text-amber-600">Головна</a> > <span class="text-gray-800 font-semibold">Галерея</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-black text-gray-900 mb-4">Фотогалерея</h1>
+            <p class="text-gray-600 max-w-xl mx-auto">Атмосфера нашої пекарні та апетитна випічка.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Випічка" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb0f?auto=format&fit=crop&w=600&q=80" alt="Лаваш" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Піца" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80" alt="Хліб" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=600&q=80" alt="Суп" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Страви" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Пекарня Ваш ЛАВаш</h3>
+                <p class="text-sm text-gray-400">Чесна їжа, справедлива ціна та найсвіжіша випічка щодня у місті Самбір.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Головна</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Про нас</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Меню</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Галерея</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Контакти</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p class="text-sm text-gray-400 mb-2">вулиця Сагайдачного, 8, Самбір</p>
+                <p class="text-sm text-gray-400 mb-2">Телефон: +380671537888</p>
+                <p class="text-sm text-gray-400">Email: info@vash-lavash.ua</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+            &copy; 2024 Пекарня Ваш ЛАВаш. Всі права захищені.
+        </div>
+    </footer>
+</body>
+</html>"
+    },
+    {
+      "path": "booking.html",
+      "content": "<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання - Пекарня Ваш ЛАВаш</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20 flex items-center justify-between px-6 md:px-12 shadow-sm">
+        <a href="index.html" class="text-2xl font-black text-amber-600 flex items-center gap-2">
+            <span>🍞</span> Ваш ЛАВаш
+        </a>
+        <div class="hidden md:flex items-center gap-2 font-medium">
+            <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Головна</a>
+            <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Про нас</a>
+            <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Меню</a>
+            <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Галерея</a>
+            <a href="booking.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Бронювання</a>
+            <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Контакти</a>
+        </div>
+        <div class="md:hidden">
+            <a href="services.html" class="bg-amber-500 text-white px-4 py-2 rounded-lg text-sm font-bold">Меню</a>
+        </div>
+    </nav>
+
+    <div class="bg-white border-b border-gray-100 py-4 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-gray-500">
+            <a href="index.html" class="hover:text-amber-600">Головна</a> > <span class="text-gray-800 font-semibold">Бронювання</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6">
+        <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-100">
+            <div class="text-center mb-10">
+                <h1 class="text-3xl font-black text-gray-900 mb-2">Бронювання столика / Замовлення</h1>
+                <p class="text-gray-600">Заповніть форму, і ми зв'яжемося з вами для підтвердження.</p>
+            </div>
+
+            <form action="https://formsubmit.co/info@vash-lavash.ua" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Ваше ім'я</label>
+                    <input type="text" name="name" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="Введіть ваше ім'я">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Номер телефону</label>
+                    <input type="tel" name="phone" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="+380...">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Дата</label>
+                        <input type="date" name="date" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Час</label>
+                        <input type="time" name="time" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Повідомлення / Побажання до замовлення</label>
+                    <textarea name="message" rows="4" class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="Вкажіть страви або кількість гостей..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-5 rounded-xl text-lg font-bold hover:shadow-xl transition transform hover:-translate-y-0.5">Надіслати заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Пекарня Ваш ЛАВаш</h3>
+                <p class="text-sm text-gray-400">Чесна їжа, справедлива ціна та найсвіжіша випічка щодня у місті Самбір.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Головна</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Про нас</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Меню</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Галерея</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Контакти</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p class="text-sm text-gray-400 mb-2">вулиця Сагайдачного, 8, Самбір</p>
+                <p class="text-sm text-gray-400 mb-2">Телефон: +380671537888</p>
+                <p class="text-sm text-gray-400">Email: info@vash-lavash.ua</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+            &copy; 2024 Пекарня Ваш ЛАВаш. Всі права захищені.
+        </div>
+    </footer>
+</body>
+</html>"
+    },
+    {
+      "path": "contacts.html",
+      "content": "<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Пекарня Ваш ЛАВаш</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20 flex items-center justify-between px-6 md:px-12 shadow-sm">
+        <a href="index.html" class="text-2xl font-black text-amber-600 flex items-center gap-2">
+            <span>🍞</span> Ваш ЛАВаш
+        </a>
+        <div class="hidden md:flex items-center gap-2 font-medium">
+            <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Головна</a>
+            <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Про нас</a>
+            <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Меню</a>
+            <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Галерея</a>
+            <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Бронювання</a>
+            <a href="contacts.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Контакти</a>
+        </div>
+        <div class="md:hidden">
+            <a href="services.html" class="bg-amber-500 text-white px-4 py-2 rounded-lg text-sm font-bold">Меню</a>
+        </div>
+    </nav>
+
+    <div class="bg-white border-b border-gray-100 py-4 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-gray-500">
+            <a href="index.html" class="hover:text-amber-600">Головна</a> > <span class="text-gray-800 font-semibold">Контакти</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-black text-gray-900 mb-4">Контактна інформація</h1>
+            <p class="text-gray-600 max-w-xl mx-auto">Ми завжди раді бачити вас у нашій пекарні у Самборі.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 space-y-8">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Адреса</h3>
+                    <p class="text-gray-600">вулиця Сагайдачного, 8, Самбір, Львівська область, Україна, 81400</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Телефон</h3>
+                    <p class="text-gray-600"><a href="tel:+380671537888" class="text-amber-600 font-semibold hover:underline">+380 67 153 7888</a></p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Email</h3>
+                    <p class="text-gray-600"><a href="mailto:info@vash-lavash.ua" class="text-amber-600 font-semibold hover:underline">info@vash-lavash.ua</a></p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Години роботи</h3>
+                    <p class="text-gray-600">Щодня: 09:00 - 21:00</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 flex items-center justify-center min-h-[400px]">
+                <div class="w-full h-full min-h-[400px] bg-gray-100 flex items-center justify-center text-gray-500 p-6 text-center">
+                    <div>
+                        <p class="text-lg font-bold mb-2">вулиця Сагайдачного, 8, Самбір</p>
+                        <p class="text-sm">Львівська область, Україна</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Пекарня Ваш ЛАВаш</h3>
+                <p class="text-sm text-gray-400">Чесна їжа, справедлива ціна та найсвіжіша випічка щодня у місті Самбір.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Головна</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Про нас</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Меню</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Галерея</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Контакти</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p class="text-sm text-gray-400 mb-2">вулиця Сагайдачного, 8, Самбір</p>
+                <p class="text-sm text-gray-400 mb-2">Телефон: +380671537888</p>
+                <p class="text-sm text-gray-400">Email: info@vash-lavash.ua</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+            &copy; 2024 Пекарня Ваш ЛАВаш. Всі права захищені.
+        </div>
+    </footer>
+</body>
+</html>
